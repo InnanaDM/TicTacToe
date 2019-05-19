@@ -18,8 +18,8 @@
             turn: 0,
           };
         }
-
-        var state = initialState();
+        // simple error fixed had variable set to var instead of let
+        let state = initialState();
         function renderBoard() {
           DOM.$currentPlayer.textContent = state.players[state.currentPlayer];
           // Assuming SIZE > 0.
