@@ -44,6 +44,36 @@ for (let j = 0; j < SIZE; j++) {
           }
         }
 
+        function checkWinning(board, player) {
+            // Check horizontal.
+            for (let i = 0; i < SIZE; i++) {
+              if (board[i].every(cell => cell === player)) {
+                return true;
+              }
+            }
+  
+            for (let j = 0; j < SIZE; j++) {
+                let verticalAllPlayer = true;
+                for (let i = 0; i < SIZE; i++) {
+                  if (board[i][j] !== player) {
+                    verticalAllPlayer = false;
+                    break;
+                  }
+                }
+
+                if (verticalAllPlayer) {
+                    return verticalAllPlayer;
+                  }
+                }
+
+                let diagonalAllPlayer = true;
+                for (let i = 0; i < SIZE; i++) {
+                  if (board[i][i] !== player) {
+                    diagonalAllPlayer = false;
+                    break;
+                  }
+                }
+
 
 
 
