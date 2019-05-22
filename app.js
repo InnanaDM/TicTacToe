@@ -1,5 +1,4 @@
 (() => {
-    console.log("ready!")
     function init () {
       const DOM = {
         $currentPlayer: document.querySelector('.js-current-player'),
@@ -125,12 +124,6 @@
     }
     document.addEventListener('DOMContentLoaded', init);
   })();
-
-
-
-
-
-
 
 
 
