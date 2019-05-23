@@ -1,0 +1,27 @@
+* {
+    background: bisque;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+
+.board-cell {
+    border: 1px solid #668;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 32px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    width: 100px;
+  }
+
+  .board-cell .content {
+    display: inline-block;
+    vertical-align: middle;
+  }
