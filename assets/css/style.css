@@ -19,6 +19,7 @@ h1 {
     line-height: 100px;
     text-align: center;
     width: 100px;
+    vertical-align: bottom;
   }
 
   .board-cell .content {
